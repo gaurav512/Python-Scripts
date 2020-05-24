@@ -27,7 +27,7 @@ def play2048():
 		elem.send_keys(dir_keys[random.randint(0,3)])
 		time.sleep(0.1)
 	
-	# Fetch the score of the player after the game is over
+	# Fetch the score of the player
 	score = driver.find_element_by_css_selector('.score-container').text
 	
 	print(f'Game over! You scored {score} points.')
